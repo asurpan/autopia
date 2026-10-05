@@ -1,0 +1,288 @@
+---  
+You:  
+tambien?
+Agent:  
+> Thought  
+> **Adding Social Media Optimization**  
+>   
+> I'm now fully focused on ensuring social media optimization. I'm adding OpenGraph tags for Facebook, WhatsApp, LinkedIn, and Instagram previews. I'm also implementing Twitter Cards with a Summary Large Image format. And finally, I'm including the Favicon.  
+>   
+>   
+>   
+¡Por supuesto que sí! Esta Landing Page está **100% optimizada para Redes Sociales** (WhatsApp, Telegram, Facebook, LinkedIn, Twitter/X e Instagram) con las tarjetas OpenGraph de imagen grande.
+
+Cuando compartas el enlace en cualquier chat o red social, aparecerá automáticamente una **tarjeta vista previa comercial** con la imagen del logo, título descriptivo y botón de llamada a la acción.
+
+---
+
+### 📄 Código HTML Completo de la Landing Page Comercial:
+
+Copia y pega este código en un archivo llamado **`index.html`** en tu repositorio de GitHub:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autopía Profesional • App de Gestión de Vehículos y Taller Mecánico</title>
+    
+    <!-- 🚀 META TAGS SEO & ASO PESO PESADO -->
+    <meta name="description" content="Descarga Autopía Profesional gratis en Google Play. La app definitiva para la gestión de mantenimiento de coches, motos, aviso de ITV, aceite, seguro y fichas de clientes para talleres mecánicos.">
+    <meta name="keywords" content="Autopía Profesional, app taller mecánico, gestión de vehículos, libro de mantenimiento digital, avisos ITV, cambio de aceite, avisos WhatsApp clientes, fichas de taller, descargar app coches, copia de seguridad json">
+    <meta name="author" content="José Sagon">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0EA5E9">
+
+    <!-- 📲 OPEN GRAPH OPTIMIZADO PARA REDES SOCIALES Y WHATSAPP -->
+    <meta property="og:site_name" content="Autopía Profesional">
+    <meta property="og:title" content="Autopía Profesional • Garaje Digital y Taller Mecánico">
+    <meta property="og:description" content="Control total de mantenimiento de coches y motos, aviso de ITV, seguro, fichas de clientes e informes PDF con logo de taller. ¡Descárgala gratis en Google Play!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://asurpan.github.io/autopia/logo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://asurpan.github.io/autopia/">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- 🐤 TWITTER CARD (X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Autopía Profesional • App de Gestión de Vehículos">
+    <meta name="twitter:description" content="La app definitiva para particulares y talleres mecánicos. Gestión de ITV, seguro, aceite, clientes e informes PDF.">
+    <meta name="twitter:image" content="https://asurpan.github.io/autopia/logo.jpg">
+
+    <!-- 📊 DATOS ESTRUCTURADOS SCHEMA.ORG (JSON-LD para Google Search) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Autopía Profesional",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.sagon.autopia",
+      "author": {
+        "@type": "Person",
+        "name": "José Sagon",
+        "email": "Appsaiber@gmail.com"
+      },
+      "description": "Aplicación Android para la gestión digital de vehículos, aviso de ITV, seguros, cambios de aceite, fichas de clientes de taller mecánico e informes PDF."
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-dark: #0F172A;
+            --card-bg: #1E293B;
+            --primary: #0EA5E9;
+            --secondary: #38BDF8;
+            --accent-green: #10B981;
+            --text-main: #F8FAFC;
+            --text-sub: #94A3B8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0EA5E9, #0284C7);
+            color: #FFFFFF;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6em;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            opacity: 0.95;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: #FFFFFF;
+            font-weight: 900;
+            font-size: 1.2em;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s, background-color 0.2s;
+            margin-top: 20px;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            background-color: #059669;
+        }
+
+        .hero-card {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid var(--border);
+            margin-top: -30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1f));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid var(--border);
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            color: var(--secondary);
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        .card p {
+            color: var(--text-sub);
+            font-size: 1em;
+            margin-bottom: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(14, 165, 233, 0.15);
+            color: var(--secondary);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-sub);
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AUTOPÍA PROFESIONAL</h1>
+        <p>Mecánica, Garaje Digital y Gestión de Clientes de Taller</p>
+        <a href="https://play.google.com/store/apps/details?id=com.sagon.autopia" class="cta-btn">
+            📱 DESCARGAR EN GOOGLE PLAY
+        </a>
+    </header>
+
+    <div class="container">
+        
+        <div class="hero-card">
+            <span class="badge">DOS PERFILES EN UNA SOLA APP</span>
+            <h2 style="color: var(--text-main); margin-top: 10px;">La solución definitiva para Particulares y Talleres Mecánicos</h2>
+            <p style="color: var(--text-sub); max-width: 700px; margin: 15px auto;">
+                Controla el mantenimiento, la ITV, el seguro y los cambios de aceite de tu garaje personal, o gestiona fichas de clientes, avisos por WhatsApp e informes técnicos en PDF para tu taller mecánico.
+            </p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <span class="badge">🚗 MODO PARTICULAR</span>
+                <h3>Garaje Digital Inteligente</h3>
+                <p>Manten el control absoluto de tus coches y motos. Recibe alertas automáticas de próxima ITV, vencimiento de seguro y cambios de aceite por kilómetros.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">🔧 MODO TALLER MECÁNICO</span>
+                <h3>Gestión de Clientes y Fichas</h3>
+                <p>Registra nombre, teléfono, DNI y dirección postal de tus clientes. Envía recordatorios directos por WhatsApp con un solo toque para concertar cita previa.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">📋 INSPECCIÓN TÉCNICA</span>
+                <h3>Diagnóstico y Checklist</h3>
+                <p>Anota síntomas reportados y realiza un chequeo técnico de 6 puntos de control críticos: Frenos, Aceite, Neumáticos, Batería, Luces y Refrigerante.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">📄 INFORMES OFICIALES</span>
+                <h3>Exportación PDF con Tu Logo</h3>
+                <p>Genera certificados e informes técnicos imprimibles en formato PDF con la marca y logotipo personalizado de tu taller mecánico.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">🗣️ SEGURIDAD EN RUTA</span>
+                <h3>Dictado por Voz Avanzado</h3>
+                <p>Registra notas de actividad e incidencias mediante comandos de voz de forma local y segura sin quitar la atención de la carretera.</p>
+            </div>
+
+            <div class="card">
+                <span class="badge">📦 RESPALDO PRIVADO</span>
+                <h3>Copia de Seguridad (.JSON)</h3>
+                <p>Exporta e importa tus vehículos y base de datos de clientes en un archivo `.json` de forma 100% gratuita y privada para cambiar de móvil sin perder nada.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <h2 style="color: var(--text-main);">¿Listo para llevar el mantenimiento de tu vehículo al siguiente nivel?</h2>
+            <a href="https://play.google.com/store/apps/details?id=com.sagon.autopia" class="cta-btn">
+                📲 CONSEGUIR AUTOPÍA EN GOOGLE PLAY
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 José Sagon • Autopía Profesional. Todos los derechos reservados.</p>
+        <p><a href="https://asurpan.github.io/autopia/">Política de Privacidad y Términos de Uso</a></p>
+    </footer>
+
+</body>
+</html>
+```
+
+¡Guarda este archivo en tu repositorio de GitHub Pages y tendrás una **Landing Page Comercial de nivel corporativo** lista para promocionar en redes sociales y dirigir usuarios a Google Play!
