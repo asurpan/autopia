@@ -1,56 +1,3 @@
----  
-You:  
-lee
-Agent:  
-> Thought  
-> **Focusing on Index Integration**  
->   
-> I'm now zeroing in on integrating the privacy policy code directly into the index file, as requested. The Google Sheets aspect is off the table; the focus is solely on embedding the relevant code snippet. I'm aiming to provide the cleanest and most efficient implementation.  
->   
->   
-> **Delivering Code Implementation**  
->   
-> Now, I've processed the user's input and generated the clean HTML code for the privacy policy, ready to be directly embedded into the `index.html` file. I'm focusing on providing this in a concise and easily-integrated format, avoiding any unnecessary elements.  
->   
->   
-> **Optimizing MetaData Integration**  
->   
-> I'm now integrating the provided Open Graph, Schema, and meta data information into the `index.html` file. I'm prioritizing accuracy and efficient implementation, ensuring all properties and data are correctly formatted and positioned within the HTML structure for optimal search engine and social media preview performance.  
->   
->   
-> **Implementing Structured Data**  
->   
-> I've just added the structured data, including the application's details, author information, and description, into the `index.html` file. I'm focusing on ensuring this information adheres to the JSON-LD format and is correctly nested to provide complete context. I've used the data to create a data structure that will offer search engines the correct information.  
->   
->   
-> **Styling Content Integration**  
->   
-> I'm now integrating the provided CSS styles into the `index.html` file. I'm focusing on ensuring proper implementation within the `<style>` tags to manage the visual presentation and structure of the privacy policy content. I'm aiming for a clean and effective visual representation.  
->   
-> I'm inserting the code into the correct section of the `index.html` file to ensure the appropriate presentation.  
->   
->   
-> **Adding Privacy Text**  
->   
-> I'm now integrating the additional privacy-related text into the privacy policy section of the `index.html` file. I'm focusing on accurately including details about local storage, data responsibility (José Sagon), and the data processing that the application performs.  
->   
->   
-> **Integrating Feature Information**  
->   
-> I'm now integrating the provided feature information into the privacy policy. I am accurately adding details about data storage: maintenance, diagnostics, and optional client data (Name, Phone, Email, ID/CIF, and Address), all stored locally. I'm also including information about vehicle photos, microphone usage for voice dictation, and technical identifiers for Google AdMob and Google Play Billing.  
->   
->   
->   
-> **Adding WhatsApp Data**  
->   
-> I'm now integrating the provided WhatsApp information. I am including the details that Autopía Profesional does not access the contact list or read WhatsApp messages. I'm focusing on accurately representing this information in the section.  
->   
->   
->   
->   
-¡Perfecto! Sin complicarlo más. Aquí tienes el código **limpio y directo** para pegar en tu archivo **`index.html`** (que contiene la Política de Privacidad oficial con los colores azul marino de Autopía):
-
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -162,14 +109,15 @@ Agent:
             </ul>
         </section>
 
-        <section>
-            <h2>6. Exención de Responsabilidad Legal (Disclaimer)</h2>
+        <section id="eliminacion">
+            <h2>6. Exención de Responsabilidad y Eliminación de Datos</h2>
             <p>Autopía Profesional es una herramienta organizativa de asistencia. El desarrollador no se responsabiliza de:</p>
             <ul>
                 <li>Multas o caducidades de la Inspección Técnica de Vehículos (ITV) o seguros.</li>
                 <li>Averías mecánicas, diagnósticos o trabajos ejecutados por talleres independientes o particulares.</li>
                 <li>Pérdida de datos por extravío, avería o formateo del dispositivo móvil sin haber realizado una copia de seguridad previa.</li>
             </ul>
+            <p>Puedes eliminar todos tus datos en cualquier momento desinstalando la aplicación o borrando el almacenamiento local desde <em>Ajustes de Android > Aplicaciones > Autopía > Borrar Datos</em>.</p>
         </section>
 
         <section>
@@ -182,4 +130,3 @@ Agent:
     </footer>
 </body>
 </html>
-```
